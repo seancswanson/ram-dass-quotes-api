@@ -4,6 +4,10 @@ const port = 3000;
 
 const allQuotes = require('./data/all-quotes.json');
 
+app.get('/', (req, res) => {
+  res.send('Welcome!\n GET quotes from api/all, api/love, api/inspiration, api/relationship, api/death, api/other.\n All quotes have been sourced from https://www.ramdass.org/ram-dass-quotes/.\n This API is for educational purposes only.\n Sean C Swanson 2021 https://seancswanson.com.');
+});
+
 app.get('/api/all', (req, res) => {
   res.send(allQuotes.payload);
 });
