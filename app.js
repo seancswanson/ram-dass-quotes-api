@@ -44,6 +44,6 @@ app.get('/api/other', (req, res) => {
   res.send(otherQuotes);
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}!`);
+app.listen(process.env.PORT || port, () => {
+  console.log(`Ram Dass Quote App is listening at ${process.env.PORT || 'http://localhost:' + port}!`);
 });
