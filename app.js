@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/all', (req, res) => {
-  res.sendFile(allQuotes.payload);
+  res.send(allQuotes.payload);
 });
 
 app.get('/api/love', (req, res) => {
@@ -45,6 +45,12 @@ app.get('/api/other', (req, res) => {
   console.log(otherQuotes);
   res.send(otherQuotes);
 });
+
+app.get('/api/random', (req, res) => {
+  const randomIndex = Math.floor((Math.random() * allQuotes.payload.length));
+  const randomQuote = allQuotes.payload[randomIndex];
+  res.send(randomQuote);
+})
 
 app.listen(process.env.PORT || port, () => {
   console.log(`Ram Dass Quote App is listening at ${process.env.PORT || 'http://localhost:' + port}!`);
