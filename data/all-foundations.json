@@ -1,0 +1,10 @@
+{
+  "payload": [
+    { "id": "ram-dass-foundation", "website": "https://www.ramdass.org/" },
+    {
+      "id": "hanuman-foundation",
+      "website": "https://www.hanuman-foundation.org/"
+    },
+    { "id": "seva-foundation", "website": "https://www.seva.org/" }
+  ]
+}
