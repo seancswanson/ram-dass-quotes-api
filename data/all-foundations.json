@@ -1,10 +1,10 @@
 {
   "payload": [
-    { "id": "ram-dass-foundation", "website": "https://www.ramdass.org/" },
+    { "id": "ram-dass-foundation", "name": "Love Serve Remember Foundation", "website": "https://www.ramdass.org/" },
     {
       "id": "hanuman-foundation",
-      "website": "https://www.hanuman-foundation.org/"
+      "name": "Hanuman Foundation", "website": "https://www.hanuman-foundation.org/"
     },
-    { "id": "seva-foundation", "website": "https://www.seva.org/" }
+    { "id": "seva-foundation", "name": "Seva Foundation", "website": "https://www.seva.org/" }
   ]
 }
