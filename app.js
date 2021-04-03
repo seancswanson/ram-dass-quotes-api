@@ -37,7 +37,7 @@ app.get('/api/quotes/inspiration', (req, res) => {
 });
 
 app.get('/api/quotes/relationship', (req, res) => {
-  const relationshipQuotes = (allQuotes.payload).filter((quote) => quote.category === 'relationship');
+  const relationshipQuotes = (allQuotes.payload).filter((quote) => quote.category === 'relationships');
   console.log(relationshipQuotes);
   res.send(relationshipQuotes);
 });
@@ -49,7 +49,7 @@ app.get('/api/quotes/death', (req, res) => {
 });
 
 app.get('/api/quotes/other', (req, res) => {
-  const otherQuotes = (allQuotes.payload).filter((quote) => quote.category === 'other');
+  const otherQuotes = (allQuotes.payload).filter((quote) => quote.category === 'other things');
   console.log(otherQuotes);
   res.send(otherQuotes);
 });
